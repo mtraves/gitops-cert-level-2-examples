@@ -25,13 +25,4 @@ spec:
   ignoreDifferences:
   - group: ""
     kind: Secret
-    apiVersion: v1
-    metadata:  
-      name: example-secret
-      annotations:
-        avp.kubernetes.io/path: "path/to/secret"
-      stringData:
-    password: my-password
-    kind: Deployment
-    jsonPointers:
-    - /spec/creation
+    data: my-password
